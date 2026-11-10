@@ -1,0 +1,24 @@
+openapi: "3.0.3"
+info:
+  title: "webhook-relay"
+  version: "1.0.0"
+servers:
+  - url: "http://localhost:8119"
+paths:
+  "/webhook-relays":
+    get:
+      summary: "List webhook-relays"
+      responses:
+        "200":
+          description: OK
+    post:
+      summary: "Create webhook-relay"
+      responses:
+        "200":
+          description: OK
+  "/webhook-relays/{id}":
+    get:
+      summary: "Get webhook-relay by ID"
+      responses:
+        "200":
+          description: OK
